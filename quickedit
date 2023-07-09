@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source=$1
+filename="$1.md"
+printf "**Source:** $2 \n" >> "${filename}" 
+printf "%b" "**Date Created:** $(date +%Y-%m-%d)" >> "${filename}"
+$EDITOR "$filename"
